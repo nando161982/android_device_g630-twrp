@@ -17,10 +17,10 @@
 # Inherit from our custom product configuration
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/huawei/config/common.mk)
 
 # Inherit device configuration.
-$(call inherit-product, device/huawei/g630/full_g630.mk)
+$(call inherit-product, device/huawei/y625/full_y625.mk)
 
 # Device identifier.
-PRODUCT_NAME := omni_g630
+PRODUCT_NAME := kvy625-u
