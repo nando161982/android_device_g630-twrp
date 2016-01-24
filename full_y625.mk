@@ -15,14 +15,14 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit from device.mk
-$(call inherit-product, device/huawei/g630/device.mk)
+$(call inherit-product, device/huawei/kvy625-u/device_kvy625-u.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := g630
-PRODUCT_NAME := full_g630
-PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := g630-u20
-PRODUCT_MANUFACTURER := Huawei
+PRODUCT_DEVICE := kvy625-u
+PRODUCT_NAME := cm_kvy625-u
+PRODUCT_BRAND := huawei
+PRODUCT_MODEL := kvy625-u
+PRODUCT_MANUFACTURER := huawei
