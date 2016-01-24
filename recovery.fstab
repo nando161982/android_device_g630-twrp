@@ -1,9 +1,10 @@
 # mount point	fstype	device
 	
-/boot           emmc    /dev/block/platform/msm_sdcc.1/by-name/boot
-/cache          ext4    /dev/block/platform/msm_sdcc.1/by-name/cache
-/cust		ext4	/dev/block/platform/msm_sdcc.1/by-name/cust	            flags=display="Cust";backup=1;wipeingui
-/data           ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata
-/internal_sd    vfat    /dev/block/platform/msm_sdcc.1/by-name/grow             flags=display="Internal Storage";storage;wipeingui
-/system         ext4    /dev/block/platform/msm_sdcc.1/by-name/system
-/sdcard         vfat    /dev/block/mmcblk1p1    /dev/block/mmcblk1              flags=display="Micro SDcard";storage;wipeingui;removable
+/boo		emmc    /dev/block/platform/msm_sdcc.1/by-name/boot
+/cach		ext4    /dev/block/platform/msm_sdcc.1/by-name/cache
+/misc		emmc	/dev/block/platform/msm_sdcc.1/by-name/misc	            flags=display="Cust";backup=1;wipeingui
+/recover	emmc        /dev/block/platform/msm_sdcc.1/by-name/recovery
+/dat		ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata
+/internal_s	vfat    /dev/block/platform/msm_sdcc.1/by-name/gro		flags=display="Internal Storage";storage;wipeingui
+/syste		ext4    /dev/block/platform/msm_sdcc.1/by-name/system
+/sdcar		vfat    /dev/block/mmcblk1p1				flags=display="Micro SDcard";storage;wipeingui;removable
