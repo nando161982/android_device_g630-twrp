@@ -19,18 +19,18 @@ $(call inherit-product, build/target/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit g630 vendor setup
-$(call inherit-product-if-exists, vendor/huawei/g630/g630-vendor.mk)
+$(call inherit-product-if-exists, vendor/huawei/kvy625-u/kvy625-u-vendor.mk)
 
 # Path to overlay files
-DEVICE_PACKAGE_OVERLAYS += device/huawei/g630/overlay
+DEVICE_PACKAGE_OVERLAYS += device/huawei/kvy625-u/overlay
 
 # Files needed for recovery image
 PRODUCT_COPY_FILES += \
-device/huawei/g630/kernel:kernel \
-device/huawei/g630/dt.img:dt.img \
-device/huawei/g630/recovery/sbin/charge_recovery:/recovery/root/sbin/charge_recovery \
-device/huawei/g630/recovery/sbin/rmt_storage_recovery:/recovery/root/sbin/rmt_storage_recovery \
-device/huawei/g630/recovery/sbin/rmt_oeminfo_recovery:/recovery/root/sbin/rmt_oeminfo_recovery \
-device/huawei/g630/recovery/sbin/linker:/recovery/root/sbin/linker \
-device/huawei/g630/recovery/sbin/charge.sh:/recovery/root/sbin/charge.sh \
-device/huawei/g630/recovery/tp/1191601.img:root/tp/1191601.img
+device/huawei/kvy625-u/kernel:kernel \
+device/huawei/kvy625-u/dt.img:dt.img \
+device/huawei/kvy625-u/recovery/sbin/charge_recovery:/recovery/root/sbin/charge_recovery \
+device/huawei/kvy625-u/recovery/sbin/rmt_storage_recovery:/recovery/root/sbin/rmt_storage_recovery \
+device/huawei/kvy625-u/recovery/sbin/rmt_oeminfo_recovery:/recovery/root/sbin/rmt_oeminfo_recovery \
+device/huawei/kvy625-u/recovery/sbin/linker:/recovery/root/sbin/linker \
+device/huawei/kvy625-u/recovery/sbin/charge.sh:/recovery/root/sbin/charge.sh \
+device/huawei/kvy625-u/recovery/tp/1191601.img:root/tp/1191601.img
