@@ -5,6 +5,6 @@
 /misc		emmc	/dev/block/platform/msm_sdcc.1/by-name/misc		flags=display="Cust";backup=1;wipeingui
 /recovery	emmc	/dev/block/platform/msm_sdcc.1/by-name/recovery
 /data		ext4	/dev/block/platform/msm_sdcc.1/by-name/userdata
-/internal	vfat	/dev/block/platform/msm_sdcc.1/by-name/gro		flags=display="Internal Storage";storage;wipeingui
+/sdcard0	vfat	/dev/block/platform/msm_sdcc.1/by-name/gro		flags=display="Internal Storage";storage;wipeingui
 /system		ext4	/dev/block/platform/msm_sdcc.1/by-name/system
 /sdcard		vfat	/dev/block/mmcblk1p1					flags=display="Micro SDcard";storage;wipeingui;removable
